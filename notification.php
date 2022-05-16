@@ -26,8 +26,8 @@ if(isset($_SESSION["ses_username"]) === false){
     <nav class="sidebar close">
         <header>
             <div class="image-text">
-                <span class="image">
-                    <img src="images/logo.png" alt="">
+            <span class="image">
+                <a href="index.php" title="Home Page"><img class='glow' src="images/logo.png" alt="" ></a>
                 </span>
 
                 <div class="text logo-text">
