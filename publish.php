@@ -1,4 +1,3 @@
-
 <?php
 SESSION_START();
 
@@ -12,6 +11,7 @@ if(isset($_SESSION["ses_username"]) === false){
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<title>Publish</title>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -104,7 +104,15 @@ if(isset($_SESSION["ses_username"]) === false){
     <section class="home">
         <div class="text">What's on your mind?<button class="posts" ><i class='bx bx-edit-alt icon' ></i>Publish</button>
         </div>
-
+<div class="bd-example">
+     <form>
+        <div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+    <button>hi</button>
+  </div>
+  
+   </form>
+   </div>
     
 
     </section>
