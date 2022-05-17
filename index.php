@@ -233,7 +233,7 @@ if(isset($_SESSION["ses_username"]) === false){
        
 <footer class="footer">
 <div>© 2022 Copyright:
-  <a href="/">Unblurred.com</a>
+  <a href="#">Unblurred.com</a>
 </div>
 </footer>
     </section>
