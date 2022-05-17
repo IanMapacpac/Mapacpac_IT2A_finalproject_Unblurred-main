@@ -34,7 +34,7 @@
     color: #333;
 }
 .login-form-2{
-     position: absolute;
+     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -624,25 +624,8 @@ button{
     display: flex;
     align-items: flex-start;
 }
-.form-control {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    border-radius: 10px;
-    
-}
-.form-group {
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    border-radius: 10px;
-    box-shadow: #1c1212;
-    text-shadow: #333;
-}
+
+
 
 .bd-example {
     padding: 1.5rem;
