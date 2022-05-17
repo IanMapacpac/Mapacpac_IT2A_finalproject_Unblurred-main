@@ -115,7 +115,11 @@ if(isset($_SESSION["ses_username"]) === false){
    </form>
    </div>
     
-
+   <footer class="footer">
+<div>© 2022 Copyright:
+  <a href="#">Unblurred.com</a>
+</div>
+</footer>
     </section>
 
     <script>

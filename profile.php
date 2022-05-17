@@ -225,9 +225,13 @@ if(isset($_SESSION["ses_username"]) === false){
 
 
 
-
+    
     </section>
-
+    <footer class="footer">
+<div>© 2022 Copyright:
+  <a href="#">Unblurred.com</a>
+</div>
+</footer>
     <script>
         const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
