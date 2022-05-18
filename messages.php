@@ -124,7 +124,7 @@ if(isset($_SESSION["ses_username"]) === false){
                 </div>
                 <div class="message incoming">
                     <h5>John</h5>
-                    <p>Hello Maria</p>
+                    <p>Hello Jacob</p>
                 </div>
                 <div class="message outgoing">
                     <h5>You</h5>

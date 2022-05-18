@@ -13,7 +13,7 @@ if(isset($_SESSION["ses_username"]) === false){
 
 <!DOCTYPE html>
 <html lang="en">
-<title>Friends (@mariaxienci)</title>
+<title>Friends (@jacksonforeman)</title>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

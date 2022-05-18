@@ -2,7 +2,7 @@
 SESSION_START();
 $acc_username = "ian1";
 $acc_password = "ian";
-$acc_fullname = "Juan Dela Cruz";
+$acc_fullname = "Jacob Salvador";
 $acc_address = "Marinduque PH";
 
 $url_add = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];

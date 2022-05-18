@@ -127,7 +127,7 @@ if(isset($_SESSION["ses_username"]) === false){
             
         </div>
         <div class="pd-right">
-                <button type="button"><i class='bx bx-edit-alt icon' ></i>Edit Profile</button>
+                <a href="editProfile.php"><button type="button"><i class='bx bx-edit-alt icon' ></i>Edit Profile</button></a>
             </div>
         </div>
             <div class="about-section">
