@@ -1,4 +1,3 @@
-
 <?php
 SESSION_START();
 
@@ -10,9 +9,11 @@ if(isset($_SESSION["ses_username"]) === false){
        session_destroy();
        header("Location: login.php?signout");}
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
-<title>Home</title>
+<title>Friends (@mariaxienci)</title>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@ if(isset($_SESSION["ses_username"]) === false){
     
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
+    
 </head>
 <body>
     <nav class="sidebar close">
@@ -103,141 +104,131 @@ if(isset($_SESSION["ses_username"]) === false){
     </nav>
 
     <section class="home">
-        <div class="text">Home<a href="publish.php"><button class="posts" ><i class='bx bx-edit-alt icon' ></i>Publish</button></a>
+        <div class="text">Friends</div>
+
+        <div class="profile-container">
+            <div class="profile-details">
+                <div class="pd-left">
+                    <div class="pd-row">
+            <img src="images/profile6.jpg" class="dp-img" alt="">
+            <div>
+            <h3 class="mt-0 mb-0" ><?php echo 'Summer Veciana' ?> </h3>
+            <p>6 Friends</p>
+                <div class="friends-img">
+            <img src="images/profile1.jpg" alt="">
+            <img src="images/profile2.jpg" alt="">
+            <img src="images/profile3.jpg" alt="">
+            <img src="images/profile4.jpg" alt="">
+            <i class='bx bx-dots-horizontal-rounded icon' ></i>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="pd-right">
+                <button type="button"><i class='bx bx-edit-alt icon ' ></i>Unfollow</button>
+            </div>
+        </div>
+            <div class="about-section">
+                <div class="bio">
+                    <h1>About Me</h1>
+                      <p>Hi, My name is Summer, and I live in <?php echo $_SESSION['ses_address']; ?>.</p>
+                </div>
+            </div>
+
+            <div class="social-media">
+                <div class="socmed">
+                    <h1>Other Social Media Accounts</h1>   
+            </div>
+
+        <div class="wrapper">
+
+                <div class="icon facebook">
+                    <div class="tooltip">
+                        Facebook
+                    </div>
+                    <span><i class="bx bxl-facebook icon"></i></span>
+                </div>
+
+                <div class="icon twitter">
+                    <div class="tooltip">
+                        Twitter
+                    </div>
+                    <span><i class="bx bxl-twitter icon"></i></span>
+                </div>
+
+                <div class="icon instagram">
+                    <div class="tooltip">
+                        Instagram
+                    </div>
+                    <span><i class="bx bxl-instagram icon"></i></span>
+                </div>
         </div>
 
-    <div class="feed">
-        <h1>Feed</h1>
-        <div class="feed-text">
-            <h2>Latest</h2>
-            <span>Popular</span>
         </div>
-    </div>
 
-    <div class="main-posts">
-
-        <div class="post-box">
-            <a href="friendJohn.php"><img src="images/post1.jpg" alt=""></a>
+            <div class="my-post">
+                <h1>Posts</h1>
+            </div>
+            <div class="my-feed">
+            <div class="post-box">
+            <img src="images/post6.jpg" alt="">
 
             <div class="post-info">
-                <div class="post-profile">
-                    <div class="post-img">
-                        <img src="images/profile1.jpg" alt="">
-                    </div>
-                    <h3>John</h3>
-                </div>
                 <div class="likes">
                     <i class='bx bx-heart icon' ></i>
-                    <span>11.4M</span>
-                    <i class='bx bx-message-dots icon' ></i>
-                    <span>97</span>
-            </div>
-            </div>
-        </div>
-
-        <div class="post-box">
-            <a href="friendMaria.php"><img src="images/post2.jpg" alt=""></a>
-
-            <div class="post-info">
-                <div class="post-profile">
-                    <div class="post-img">
-                        <img src="images/profile2.jpg" alt="">
-                    </div>
-                    <h3>Maria</h3>
-                </div>
-                <div class="likes">
-                    <i class='bx bx-heart icon' ></i>
-                    <span>9.2k</span>
-                    <i class='bx bx-message-dots icon' ></i>
-                    <span>88</span>
-            </div>
-            </div>
-        </div>
-
-        <div class="post-box">
-        <a href="friendSteph.php"><img src="images/post3.jpg" alt=""></a>
-
-            <div class="post-info">
-                <div class="post-profile">
-                    <div class="post-img">
-                        <img src="images/profile3.jpg" alt="">
-                    </div>
-                    <h3>Stephen</h3>
-                </div>
-                <div class="likes">
-                    <i class='bx bx-heart icon' ></i>
-                    <span>4.2k</span>
+                    <span>7.2k</span>
                     <i class='bx bx-message-dots icon' ></i>
                     <span>25</span>
             </div>
             </div>
         </div>
-        
+            
+            <div class="post-box">
+            <img src="images/mypost2.jpg" alt="">
+
+            <div class="post-info">
+                <div class="likes">
+                    <i class='bx bx-heart icon' ></i>
+                    <span>5.3k</span>
+                    <i class='bx bx-message-dots icon' ></i>
+                    <span>73</span>
+            </div>
+            </div>
+        </div>
+
         <div class="post-box">
-        <a href="friendMichael.php"><img src="images/post4.jpg" alt=""></a>
+            <img src="images/mypost3.jpg" alt="">
 
             <div class="post-info">
-                <div class="post-profile">
-                    <div class="post-img">
-                        <img src="images/profile4.jpg" alt="">
-                    </div>
-                    <h3>Michael</h3>
-                </div>
                 <div class="likes">
                     <i class='bx bx-heart icon' ></i>
-                    <span>14k</span>
+                    <span>5k</span>
                     <i class='bx bx-message-dots icon' ></i>
-                    <span>104</span>
+                    <span>13</span>
             </div>
             </div>
         </div>
 
-                <div class="post-box">
-                <a href="friendJackson.php"><img src="images/post5.jpg" alt=""></a>
 
-            <div class="post-info">
-                <div class="post-profile">
-                    <div class="post-img">
-                        <img src="images/profile5.jpg" alt="">
-                    </div>
-                    <h3>Jackson</h3>
-                </div>
-                <div class="likes">
-                    <i class='bx bx-heart icon' ></i>
-                    <span>8k</span>
-                    <i class='bx bx-message-dots icon' ></i>
-                    <span>35</span>
-            </div>
-            </div>
-        </div>
 
-                <div class="post-box">
-                <a href="friendSummer.php"><img src="images/post6.jpg" alt=""></a>
-
-            <div class="post-info">
-                <div class="post-profile">
-                    <div class="post-img">
-                        <img src="images/profile6.jpg" alt="">
-                    </div>
-                    <h3>Summer</h3>
-                </div>
-                <div class="likes">
-                    <i class='bx bx-heart icon' ></i>
-                    <span>15.4k</span>
-                    <i class='bx bx-message-dots icon' ></i>
-                    <span>122</span>
+    </div>
             </div>
-            </div>  
-             
-        </div>
-        <div class="post-profile">
-        <footer class="footer">
+ 
+
+
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
 <div>© 2022 Copyright:
   <a href="#">Unblurred.com</a>
 </div>
 </footer>
-                </div>
-
     </section>
 
     <script>
@@ -267,9 +258,7 @@ modeSwitch.addEventListener("click" , () =>{
         
     }
 });
-
     </script>
 
 </body>
- 
 </html>
